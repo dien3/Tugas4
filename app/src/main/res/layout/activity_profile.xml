@@ -58,11 +58,12 @@
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/futura_pt_demibold"
             android:textSize="20sp"
+            android:textColor="@color/colorLabel"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title_about"
-            tools:text="I think this is one of the most important qualities to have as a driver: Show responsibility for other traffic participants."
-            />
+            app:layout_constraintTop_toBottomOf="@+id/title_about"/>
+        <!--            tools:text="I think this is one of the most important qualities to have as a driver: Show responsibility for other traffic participants."-->
+
 
         <View
             android:id="@+id/separator1"
@@ -87,6 +88,7 @@
             android:text="Fullname"
             android:textAlignment="textStart"
             android:textSize="20sp"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/separator1"
@@ -101,11 +103,12 @@
             android:fontFamily="@font/futura_pt_demibold"
             android:textAlignment="textEnd"
             android:textSize="20sp"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@id/separator1"
-            tools:text="Jonathan Doe"
-            />
+            app:layout_constraintTop_toBottomOf="@id/separator1"/>
+        <!--            tools:text="Dieny \'Izzaty"-->
+
 
         <View
             android:id="@+id/separator2"
@@ -121,13 +124,13 @@
             />
 
         <TextView
-            android:id="@+id/title_email"
+            android:id="@+id/title_nim"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/futura_pt_demibold"
-            android:text="Email"
+            android:text="Nim"
             android:textAlignment="textStart"
             android:textSize="20sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -136,19 +139,20 @@
             />
 
         <TextView
-            android:id="@+id/label_email"
+            android:id="@+id/label_nim"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/futura_pt_demibold"
             android:textAlignment="textEnd"
+            android:textColor="@color/colorLabel"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@id/separator2"
-            tools:text="jonathan.designer@gmail.com"
-            />
+            app:layout_constraintTop_toBottomOf="@id/separator2"/>
+        <!--            tools:text="H1D020008"-->
+
 
         <View
             android:id="@+id/separator3"
@@ -160,7 +164,7 @@
             android:background="@color/colorTitle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/title_email"
+            app:layout_constraintTop_toBottomOf="@id/title_nim"
             />
 
         <TextView
@@ -170,7 +174,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/futura_pt_demibold"
-            android:text="Email"
+            android:text="Home Page"
             android:textAlignment="textStart"
             android:textSize="20sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -190,7 +194,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@id/separator3"
-            tools:text="jonathan.designer.com"
+            android:textColor="@color/colorLabel"
             />
 
         <View
@@ -217,6 +221,7 @@
             android:text="Visit My Homepage"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
+            android:onClick="handleView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/separator4"
